@@ -14,12 +14,12 @@
 
             &nbsp;
 
-        <form action="{{route("books.destroy",["book" => $book["id"]])}}">
+        <form action="{{route("books.destroy",["book" => $book["id"]])}}" method="POST">
 
             @csrf
             @method("DELETE")
             <button type="submit">Delete</button>
-            
+
         </form>
 
         </div>
